@@ -9,11 +9,12 @@ public class ConsoleView {
 
     public Move directions(){
 
-        Scanner sc = new Scanner(System.in);
+
+		Scanner sc = new Scanner(System.in);
         System.out.println("Choose the direction to slide the numbers. \n 'w' goes up. " +
                 "\n 's' goes down. \n 'a' goes left. \n 'd' goes right. \n Good luck!");
         String input = sc.nextLine();
-
+        sc.close();
         switch (input.toLowerCase()){
 
             case "w":
@@ -26,6 +27,7 @@ public class ConsoleView {
                 return Move.RIGHT;
             default:
                 throw new IllegalArgumentException("Please choose the direction in accordance with 'wsad' logic");
+               
         }
     }
 }
