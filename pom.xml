@@ -88,5 +88,14 @@
 			</plugin>
 		</plugins>
 	</build>
+	
+	<distributionManagement>
+		<repository>
+		<id>game-2048</id>
+		<name>game-2048</name>
+		<url>file:///home/adam93/.m2</url>
+		<layout>default</layout>
+		</repository>
+	</distributionManagement>
 
 </project>
