@@ -1,3 +1,5 @@
+package com.github.adamflorczak.game2048;
+
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 
